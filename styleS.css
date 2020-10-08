@@ -1,0 +1,117 @@
+
+@import "compass/css3";
+
+body {
+  font-family: Helvetica, Arial, non-serif;
+  font-weight: lighter;
+  background: radial-gradient(rgba(255, 255, 255, 1), rgba(0, 0, 0, 0.25));
+  height: 100vh;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-weight: 100;
+  font-size: 5vh;
+  margin-top: 1em;
+  background: linear-gradient(45deg, #7855F5, #14E3FD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0.2);
+}
+
+.wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.input-wrap {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: linear-gradient(45deg, #7855F5, #14E3FD);
+  border-radius: 5px;
+  border-color: white;
+}
+
+th {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
+  border-right: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+
+.title a{
+  color: white;
+}
+
+/* tr {
+  &:last-child {
+    td {
+      border-radius: 0 0 5px 5px;
+
+      &:active {
+        border-radius: 0;
+      }
+    }
+  }
+} */
+
+/* td {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
+  border-right: 1px solid rgba(255, 255, 255, 0.8);
+
+  &:active {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+    cursor: move !important;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+} */
+
+th,
+td {
+  text-align: left;
+  padding: 1em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.title {
+  width: 80%;
+}
+
+.sortable-helper {
+  background-color: red;
+}
+
+label[for="search"] {
+  margin: 0 0.5em 0 0;
+  cursor: pointer;
+}
+
+input {
+  padding: 0.5em;
+  font-size: 1em;
+  margin: 2em 0 0 0;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+
+
+

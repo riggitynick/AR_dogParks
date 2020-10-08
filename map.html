@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Dog Parks Map</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@1&family=Pacifico&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" type="text/css" href="styleS.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    
+    <script src="//code.jquery.com/jquery.min.js"></script>
+
+    <script>
+    $.get("/AR_dogParks/navigation.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+    </script>
+
+<script>
+    $.get("/AR_dogParks/footer.html", function(data){
+        $("#foot-placeholder").replaceWith(data);
+    });
+    </script>
+
+
+
+    <script src="script.js"></script>
+</head>
+
+<!-- color scheme:   https://www.colourlovers.com/palette/4762107/Meaningwave -->
+
+
+
+<body>
+    <div id="nav-placeholder"></div>
+
+
+
+    <!-- <img src="images/DogParkMapLogo.png" class="logo" style="height:5vh; width:5vh;"> -->
+    <h1>Map of Dog Parks</h1><br>
+
+
+    <iframe src="https://www.google.com/maps/d/embed?mid=1JQd60kKr14096wx_xzYZo2Kr-BbzgPJx" width="100%" height="480"></iframe>
+
+
+    <h2 style="margin-bottom: 1em; padding-bottom: 1em;">Locations of dog parks on this website<br></h2>
+
+<br>
+<br>
+
+
+
+
+
+ 
+
+
+</body>
+<footer>
+    <div id="foot-placeholder"></div>
+</footer>
+
+</html>

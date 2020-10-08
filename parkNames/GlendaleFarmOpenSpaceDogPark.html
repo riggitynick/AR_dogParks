@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glendale Farm Open Space Dog Park</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@1&family=Pacifico&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" type="text/css" href="../styleS.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+$.get("../navigation.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+});
+</script>
+   
+<script>
+    $.get("../../AR_dogParks/footer.html", function(data){
+        $("#foot-placeholder").replaceWith(data);
+    });
+    </script>
+
+    <script src="../script.js"></script>
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="nav-placeholder"></div>
+
+
+    
+<h1>Glendale Farm Open Space Dog Park</h1> <br>
+
+
+<h2 style="margin-bottom: 5vh;">12300 S Havana St, Castle Rock, CO, US, 80108</h2>
+
+
+
+
+<div id="ArToggle"class="accordianSymbol" onclick="showArPopup()">
+    + Augmented Reality Map<br> ____________________</div>
+
+<div id="ArPopup" class="subtitles">
+<h3>Augmented Reality Park Map - Mobile Device</h3>
+<h3>__________________________</h3>
+<img src="../images/AR-Mockup.png" style="width:80vw;"><br>
+<a href="../arMaps/chatfieldArMap.html" target="blank" style="color:white; ">OPEN AR</a>
+<div class="closeSymbol" onclick="removeArPopup()">x</div>
+</div>
+
+
+
+
+<div id="AmenToggle"class="accordianSymbol" onclick="showAmenPopup()">
+    + Amenities<br> ____________________</div>
+
+<div id="AmenPopup" class="subtitles">
+<h3>Amenities</h3>
+<h3>__________________________</h3>
+
+
+<h4>-Agility course</h4>
+<h4>-Lots of trails</h4>
+
+
+<div class="closeSymbol" onclick="removeAmenPopup()">x</div>
+</div>
+
+
+
+<div id="InfoToggle"class="accordianSymbol" onclick="showInfoPopup()">
+    + Information & Rules<br> ____________________</div>
+
+<div id="InfoPopup" class="subtitles">
+<h3>Information & Rules</h3>
+<h3>__________________________</h3>
+<h4>-Dog parks are open one hour before sunrise until one hour after sunset.</h4>
+<a href="https://www.douglas.co.us/dcoutdoors/dog-off-leash-areas/ " target="blank"><h4>-Click here for in depth rules and information</h4></a>
+
+<br>
+
+
+<div class="closeSymbol" onclick="removeInfoPopup()">x</div>
+</div>
+
+
+
+<div id="MapToggle"class="accordianSymbol" onclick="showMapPopup()">
+    + Maps<br> ____________________</div>
+
+<div id="MapPopup" class="subtitles">
+<!-- <h3>Illustrated Map</h3>
+<h3>__________________________</h3> -->
+
+<h3>Google Map</h3>
+<h3>__________________________</h3>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1911.867047275659!2d-104.86952871889932!3d39.49092464356272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1601322760520!5m2!1sen!2sus" width="100%" height="450" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+<div class="closeSymbol" onclick="removeMapPopup()">x</div>
+</div>
+
+
+<div id="ReviewToggle"class="accordianSymbol" onclick="showReviewPopup()">
+    + Reviews<br> ____________________</div>
+
+<div id="ReviewPopup" class="subtitles">
+<h3>Reviews</h3>
+<h3>__________________________</h3>
+
+<h4><a href="https://www.yelp.com/biz/glendale-open-space-dog-park-castle-rock" target="blank" style="color:white;">-Yelp</a></h4>
+<h4><a href="https://www.bringfido.com/attraction/2544" target="blank" style="color:white;">-Bring Fido</a></h4>
+<h4><a href="https://www.google.com/search?q=glendale+farm+open+space+dog+park&rlz=1C1CHBF_enUS885US885&oq=Glendale+Farm+Open+Space+Dog+Park&aqs=chrome.0.0j46j69i61.156j0j7&sourceid=chrome&ie=UTF-8" target="blank" style="color:white;">-Google<a/></h4>
+
+<div class="closeSymbol" onclick="removeReviewPopup()">x</div>
+</div>
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<footer>
+    <div id="foot-placeholder"></div>
+</footer>
+
+</body>
+</html>

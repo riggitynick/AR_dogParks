@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List and Search</title>
+
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+<link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@1&family=Pacifico&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" type="text/css" href="styleS.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/1.0.1/fuse.min.js"></script>
+
+<script>
+  $.get("/AR_dogParks/navigation.html", function(data){
+      $("#nav-placeholder").replaceWith(data);
+  });
+  </script>
+
+<script>
+  $.get("/AR_dogParks/footer.html", function(data){
+      $("#foot-placeholder").replaceWith(data);
+  });
+  </script>
+
+
+<script src="scriptS.js"></script>
+<script src="script.js"></script>
+
+
+
+
+<style>
+
+
+</style>
+
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+
+
+    <div class="input-wrap">
+        <h1>Dog Park List & Search</h1>
+        <!-- <label for="search">Search:</label> -->
+        <input id="search" name="search" type="text" style="width: 70%;" />
+      </div>
+      <div class="wrapper">
+        <table border="1" class="project-steps-table">
+          <thead>
+            <tr>
+              <th class="title">Dog Parks</th>
+            </tr>
+          </thead>
+          <tbody class="project-steps-sortable">
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/BarnumOff-LeashDogPark.html">Barnum Off-Leash Dog Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/BerkeleyLakeDogPark.html">Berkeley Lake Dog Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/BigDryCreekDogPark.html">Big Dry Creek Dog Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/BillGoodspeedHappyTailsDogPark.html">Bill Goodspeed Happy Tails Dog Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/BroomfieldCountyCommonsDogPark.html">Broomfield County Commons Dog Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/CentennialParkOffLeashDogArea.html">Centennial Park Off Leash Dog Area - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/chatfield.html">Chatfield State Park Off-Leash Dog Area - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/cherryCreek.html">Cherry Creek State Park Dog Off-Leash Area (DOLA) - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/DavidsonMesaDogPark.html">Davidson Mesa Dog Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/DiggersDogParkatDadClark.html">Digger's Dog Park at Dad Clark - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/DogParkatTonyGrampsas.html">Dog Park at Tony Grampsas - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/DuncanParkOffLeashDogArea.html">Duncan Park Off Leash Dog Area - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/EastBoulderDogPark.html">East Boulder Dog Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/EnglewoodCanineCorral.html">Englewood Canine Corral - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/FidosFieldatFoothillPark.html">Fido's Field at Foothill Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/FirstCreek armSmallDogPark.html">First Creek Farm Small Dog Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/Forsberg-IronSpringDogPark.html">Forsberg - Iron Spring Dog Park- Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/FullerDogPark.html">Fuller Dog Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/GlendaleFarmOpenSpaceDogPark.html">Glendale Farm Open Space Dog Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/GrandviewDogPark.html">Grandview Dog Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/GreenValleyRanchEastOfLeashArea.html">Green Valley Ranch East Off Leash Area - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/HappyTailsDogPark.html">Happy Tails Dog Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/HoundHillDogPark.html">Hound Hill Dog Park at Heritage Regional Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/HowardHeustonOffLeashDogArea.html">Howard Heuston Off Leash Dog Area - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/JasonDogPark.html">Jason Dog Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/KennedyDogPark.html">Kennedy Dog Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/LouisvilleDogPark.html">Louisville Dog Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/LowryDogPark.html">Lowry Dog Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/NorthwestGreenbeltOffLeashArea.html">Northwest Greenbelt Off Leash Area - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/RailyardDogPark.html">Railyard Dog Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/RoversRunDogatRedstonePark.html">Rover's Run Dog at Redstone Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/StapletonDogPark.html">Stapleton Dog Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/TheGreatBarkDogPark.html">The Great Bark Dog Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/TrailWindsDogPark.html">Trail Winds Dog Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/Valmont Dog Park.html">Valmont Dog Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/WestArvadaDogPark.html">West Arvada Dog Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/WestminsterHillsOffLeashDogPark.html">Westminster Hills Off Leash Dog Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td class="title"><a href="../AR_dogParks/parkNames/WynetkaPondsDogPark.html">Wynetka Ponds Dog Park - Colorado</a></td>
+            </tr>
+
+            <tr>
+              <td>More parks coming soon!</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+<br><br><br>
+<br>
+
+      <footer>
+        <div id="foot-placeholder"></div>
+    </footer>
+</body>
+</html>

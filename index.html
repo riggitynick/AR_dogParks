@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Dog Parks</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@1&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="search/styleS.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="styleS.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+  
+    
+    <script src="//code.jquery.com/jquery.min.js"></script>
+
+    <script>
+    $.get("/AR_dogParks/navigation.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+    </script>
+
+<script>
+    $.get("/AR_dogParks/footer.html", function(data){
+        $("#foot-placeholder").replaceWith(data);
+    });
+    </script>
+
+
+
+    <script src="script.js"></script>
+</head>
+
+<!-- color scheme:   https://www.colourlovers.com/palette/4762107/Meaningwave -->
+
+
+
+<body>
+    <div id="nav-placeholder"></div>
+
+
+
+    <!-- <img src="images/DogParkMapLogo.png" class="logo" style="height:5vh; width:5vh;"> -->
+    <h1>AR Dog Park Maps</h1><br>
+
+    <h2 style="margin-bottom: 1em; padding-bottom: 1em;">Welcome to AR Dog Parks! <br>
+        A website where you can browse differnt dog parks, see their reviews, amenities, maps and other feaures.</h2>
+
+    <h1 style="margin-top: 0px; padding-top: 0; font-size: 1.6em;"><a href="https://riggitynick.github.io/AR_dogParks/search.html">Click here for a list of dog parks</a></h1><br>
+
+
+<h2>Each park also has it's own <span style="text-decoration: underline;">AR(Augmented Reality)</span> map,<br>
+for when you and your dog(s) are physically at the park.<br><br>
+
+<span style="font-size: 75%;">*For best AR performance, you will want to use a <span style="text-decoration: underline;">mobile phone</span>, and allow the <br>
+page to access your <span style="text-decoration: underline;">camera</span> and <span style="text-decoration: underline;">location</span>. <br>This will allow the device's GPS and 
+Gyroscope to function correctly.</span>
+</h2>
+</body>
+<footer>
+    <div id="foot-placeholder"></div>
+</footer>
+
+</html>

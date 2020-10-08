@@ -1,0 +1,510 @@
+html{
+    margin: 0;
+    padding: 0;
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    padding: 0; 
+    margin-bottom: 50px;
+    background-color: radial-gradient(rgba(255, 255, 255, 1), rgba(0, 0, 0, 0.25));
+}
+
+footer{
+    bottom: 0px;
+}
+
+iframe{
+    border-top: 4px solid rgb(3, 112, 139);
+    border-bottom: 4px solid rgb(3, 112, 139);
+}
+
+a {
+    color: white;
+}
+
+.desktopNavBar{
+    width: 101%;
+    height: 5em;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    z-index: 3;
+    background: linear-gradient(45deg, #6471F7, #A01CF2);
+    opacity: .9;
+    position: fixed;
+    margin-left: -8px;
+    color: white;
+}
+
+
+.desktopNavContent a{
+color: white;
+text-decoration: none;
+}
+
+
+.desktopNavContent{
+    display: inline-block;
+    margin: auto;
+    z-index: 3;
+    padding-left: 3em;
+    padding-top: 1.5em;
+    padding-bottom: 1em ;
+    text-align: left;
+    color: white;
+    font-size: 1.3em;
+    font-family: 'Pacifico', cursive;
+}
+
+
+.desktopNavSearch{
+    display: inline-block;
+    margin: auto;
+    padding-left: 40%;
+    padding-top: 1.5em;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+.desktopFootBar{
+    width: 100%;
+    height: 3em;
+    position: fixed;
+    bottom: 0px;
+    /* margin-top: -20px; */
+    margin-left: -8px;
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(45deg, #3CAFAA, #7855F5);
+    opacity: .9;
+    padding-top:20px;
+
+    /* position: fixed; */
+   
+}
+
+.desktopFootContent{
+    display: inline-block;
+    margin: auto;
+    padding-left: 2em;
+    text-align: left;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Pacifico', cursive;
+}
+
+.desktopFootContent a{
+    color: white;
+    text-decoration: none;
+}
+
+h1{
+    padding-top: 10vh;
+    margin: 100px;
+    margin-top:0;
+    margin-bottom:0 ;
+    font-size: 5vh;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    }
+
+h2{
+    font-size: 1.5em;
+    margin: 100px;
+    text-align: center;
+    color: rgb(51, 50, 50);
+    font-weight: 500;
+    margin-top:0;
+}
+
+h3{
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+}
+
+h4{
+    text-align: center;
+    padding: 5px;
+
+}
+
+
+.subtitles{
+    margin: 10vw;
+}
+
+#hamburgerContent{
+    display: none;
+    border-radius: 2%;
+    
+}
+
+
+#ArPopup, #AmenPopup, #InfoPopup, #MapPopup, #ReviewPopup {
+  display: none;
+  font-family: Arial, Helvetica, sans-serif;
+  float: right;
+   margin: auto;
+   margin-top: 20px;
+   opacity: .85;
+   background-color: rgb(59, 59, 59);
+   color: white;
+   text-align: center;
+   width: 100%;
+   /* height: 30vh; */
+   border-radius: 2%;
+   margin-bottom: 5vh;
+   z-index: 0;
+}
+
+
+.closingText{
+    font-size: 1.7em;
+    text-decoration: none;
+    color:rgb(250, 234, 6);
+    margin: auto;
+    width: fit-content;
+    border: 2px solid gold;
+    padding: 2px;
+    }
+
+
+.closeSymbol{
+  /* background: url(images/x-icon-test.png) no-repeat; */
+  /* background-size: 15%; */
+  border: none;
+  /* font-weight:bold; */
+  color: black;
+  text-align: center;
+  font-size: 3em;
+  margin: auto;
+  /* margin-top: 30%; */
+  width: 5%;
+  height: 5%; 
+  margin-bottom: 2vh; 
+}
+
+
+.accordianSymbol{
+    display: inline-block;
+    /* background: url(images/x-icon-test.png) no-repeat; */
+    /* background-size: 15%; */
+    border: none;
+    padding-left: 5vh;
+    /* font-weight:bold; */
+    color: black;
+    text-align: left;
+    font-size: 2.3vh;
+    margin: auto;
+    margin-bottom: 5vh;
+    /* margin-top: 30%; */
+      }
+
+
+
+      .logo {
+        width: 35px;
+        height: 35px;
+        padding-top: 1%;
+        padding-left: 1%;
+        /* top: 0px;
+        left: 0px; */
+        
+    }
+
+
+
+/* 
+Will make hamburger nav */
+
+@media only screen and (max-width: 600px) {
+
+
+    .logo {
+        width: 35px;
+        height: 35px;
+        top: 0px;
+        left: 0px;
+        padding: 4vw;
+    }
+
+    
+        h1{
+           /* font-size: 1.5em;      */
+           margin: 10px;
+           
+           /* padding: 10px;  */
+           
+        }
+        
+        h2{
+            font-size: 1.2em;
+            margin: auto;
+           }
+
+
+           .desktopNavSearch{
+              padding-left: 15px;
+              font-size: 1.1em;
+              display: none;
+              }
+
+              .desktopNavContent{
+                font-size: 1.1em;
+                padding-top: 0;
+                padding-bottom: 20px;
+                margin-top: 0;
+                display: none;
+                z-index: 4;
+            }
+
+
+
+            .desktopNavBar{
+                height: 2em;
+                margin-left: -10px;
+                /* padding-top: 0px; */
+                padding-bottom: 35px;
+                margin-top: -10px;
+                margin-bottom: 20px;
+                z-index: 3;
+                /* margin-bottom: 0px; */
+                
+                opacity: .9;
+                /* position: fixed; */
+                /* display: none; */
+            }
+
+            /* .hamburger{
+                display: unset;
+            } */
+
+            #hamburger{
+                background:url(images/hamburger.png) no-repeat;
+                background-size: 50%; 
+                /* display: inline-block; */
+                margin-bottom: -20px;
+                float: right;
+                height: 50px;
+                width: 50px; 
+                /* display: unset; */
+                margin-top: 7vw;
+                font-weight: normal;
+                text-align: center;
+                vertical-align: middle;
+                cursor: pointer;
+                white-space: nowrap;
+                font-size: 14px;
+                /* line-height: 1.6; */
+                user-select: none;
+                /* padding: 5px 10px; */
+            }
+            
+            #hamburgerTwo{
+                background:url(images/exit.png) no-repeat;
+                background-size: 50%; 
+                /* display: inline-block; */
+                margin-bottom: -20px;
+                float: right;
+                height: 50px;
+                width: 50px; 
+                margin-top: 7vw;
+                font-weight: normal;
+                text-align: center;
+                vertical-align: middle;
+                cursor: pointer;
+                white-space: nowrap;
+                font-size: 14px;
+                /* line-height: 1.6; */
+                user-select: none;
+                /* padding: 5px 10px; */
+                display: none;
+            }
+
+
+            
+#hamburgerContent{
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+     margin: auto;
+     margin-top: 10vh;
+     opacity: .85;
+     background-color: rgba(29, 0, 133, 0.644);
+     color: white;
+     text-align: center;
+     width: 100%;
+     /* height: 30vh; */
+     /* border-radius: 2%; */
+     margin-bottom: 5vh;
+     /* z-index: 0; */
+
+}
+
+#hamburgerContent a{
+    color:white;
+}
+
+
+    }
+  
+
+/* glow for logo */
+
+
+    .glowtest, .glowtestInner {
+        margin: 0 auto;
+        height: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        
+        
+        
+        .glowtest2, .glowtestInner4 {
+            margin: auto 0;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+        .glowtestInner4 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                  
+            } 
+        
+        
+        .glowtestInner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+              
+        }
+        
+        .glowtestInner2 {
+            width: 100%;
+            padding: 5% 3%;
+            color: #fff;
+            /* text-align: center; */
+            /* background-color: rgba(21,24,35,0.7); */
+            /* box-shadow: inset 2px 2px 10px rgba(0,0,0,0.3); */
+            position: fixed;
+            z-index: 0;
+        
+        }
+        .glowtestInner2:after{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: -2;
+            height: 80%;
+            width: 100%;
+            margin: 0 auto;
+            filter: blur(50px);
+            transform: scale(1.3);
+            background: linear-gradient(90deg ,#8009e2, #cbff0f);
+            background-size: 200% 200%;
+            animation: animateglow 5s ease infinite;
+        }
+        
+        /* NOT IN USE, USED TO BE SIDEBAR GLOWING
+         .glowtestInner3 {
+            position: fixed;
+            height: 100%;
+            padding: 3% 5%;
+            color: #fff;
+            text-align: left;
+            background-color: rgba(21,24,35,0.7);
+            box-shadow: inset 2px 2px 10px rgba(0,0,0,0.3)
+            
+            z-index: -1;
+        }  */
+        
+        /* .glowtestInner3:after{
+            position: absolute;
+            content:'';
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: -2;
+            height: 100%;
+            width: 100%;
+            margin: auto 0;
+            filter: blur(40px);
+            transform: scale(2);
+            background: linear-gradient(90deg, #1ef50b, #7e0fff);
+            background-size: 200% 200%;
+            animation: animateglow2 10s ease infinite;
+        
+        } */ 
+        
+        @keyframes animateglow {
+            0%{
+                background-position: 0% 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0% 50%;
+            }
+        }
+        @keyframes animateglow2 {
+            0%{
+                    background-position: 50% 0%;
+                }
+            50%{
+                    background-position: 50% 100%;
+                }
+            100%{
+                    background-position: 50% 0%;
+                }
+            
+        } 
+
+      
+        
+        
+                .menuButton {
+                    position: fixed;
+                    bottom: 0px;
+                    right: 0px;
+                    /* margin: 0.9vh; */
+                    margin: 0.35em;
+                    width: 50px;
+                    height: 50px;  
+                    animation: spin 20s linear infinite;    
+                   z-index:1;
+                    }
+
+                    .menuButtonLogo {
+                        z-index: 2;
+                        position: fixed;
+                        bottom: 0px;
+                        right: 0px;
+                        margin: 1.2em;
+                        width: 25px;
+                        height: 25px;  
+                        /* animation: spin 20s linear infinite;     */
+                       
+                        }
+
+                
+        /* ALLOWS MENU BUTTON TO SPIN USING THE ANIMATION ATTRIBUTE */
+        
+            @keyframes spin{
+                0%{
+                    transform: rotate(0deg);
+                }
+                100%{
+                    transform: rotate(360deg);
+                }
+            }
+            /* ----------------END MENU BUTTON SPIN--------------------- */
+        
